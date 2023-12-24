@@ -35,7 +35,12 @@ const cart = [
 
 //CODE HERE
 
-// const summedPrice = cart.reduce(/* CALLBACK HERE */)
+let summedPrice = cart
+.map((el) => el.price)
+.reduce((total, purchasePrice) => total + purchasePrice, 0) 
+
+console.log(summedPrice)
+
 
 
 //////////////////PROBLEM 2////////////////////
@@ -54,6 +59,13 @@ const cart = [
 */
 
 //CODE HERE
+const calcFinalPrice = (cartTotal, couponValue, tax) => {
+    let totalAfterTaxAndCoupon = cartTotal + cartTotal * tax - couponValue
+    console.log(totalAfterTaxAndCoupon)
+}
+
+calcFinalPrice(summedPrice, 2, 0.04)
+
 
 
 
@@ -79,7 +91,20 @@ const cart = [
 
 /*
     TEXT ANSWER HERE
+    //I would think about how I can let customer know about the order they placed and all the relevant info about the order. Here are my customer properties ad the data types in the following format:
 
+    property (data type) - explanation why
+
+    //assuming this is delivery only
+    name (string) - I can personalize the checkout message for each client
+    phone (string) - capture client's phone
+    email (string) - capture client's email
+    address (string) - Client's address
+    what was ordered and how much of each item was ordered (objecy) - what was ordered and number of each items client ordered
+    discount (number) - number representing customer discount (if any)
+    order total (number) - total number for the order
+    client already paid (boolean) - client prepaid online? True or False
+    
 */
 
 /*
@@ -88,3 +113,17 @@ const cart = [
 */
 
 //CODE HERE
+let jennysOrder = {
+    name: "Jenny",
+    phone: "718-250-0000",
+    email: "order@order.com",
+    address: "123 Main St, New York, NY 10532",
+    orderDetails: {
+        "Kung Pao Chicken": 2,
+        "Coca-Cola": 2,
+        "Duck Sauce": 2,
+    },
+    discount: 0.05,
+    orderTotal: 20,
+    paid: true
+}

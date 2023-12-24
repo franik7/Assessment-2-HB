@@ -198,8 +198,24 @@ console.log(filteredFood)
 
 //CODE HERE
 const filterByProperty = (property, number) => {
-    
+    for(let k = 0; k<foodArr.length;k++){
+        
+        // console.log(foodArr[k].property)
+        // console.log(foodArr[k].price)
+
+        propertyPassed = foodArr[k].property  
+        // console.log(property)
+        
+        // console.log(foodArr[k].price)
+
+        if(foodArr[k].price > number){
+        console.log(foodArr[k])
+        }
+    }
 }
+
+filterByProperty("price", 9)
+
 
 
 /*
