@@ -31,6 +31,15 @@
 */
 
 //CODE HERE
+let pizza = {
+    name: 'grandma',
+    price: 4,
+    category: 'entree',
+    popularity: 10,
+    rating: 5,
+    tags: ['vegetarian', 'kids', 'square']
+}
+
 
 
 
@@ -43,6 +52,7 @@
 */
 
 //CODE HERE
+console.log(pizza.popularity)
 
 
 /*
@@ -53,7 +63,7 @@
 */
 
 //CODE HERE
-
+console.log(pizza.tags[1])
 
 /*
     Third, destructure the price off of the
@@ -63,6 +73,8 @@
 */
 
 //CODE HERE
+const {price} = pizza
+console.log(price)
 
 
 /*
@@ -73,6 +85,8 @@
 */
 
 //CODE HERE
+const {category} = pizza
+console.log(category)
 
 
 //////////////////PROBLEM 3////////////////////
@@ -88,6 +102,41 @@
 */
 
 //CODE HERE
+//[price, popularity, rating, tags]
+let foodArr = [
+    {
+        name: 'Sicilian',
+        price: 9,
+        category: 'entree',
+        popularity: 8,
+        rating: 4.6,
+        tags: ['vegetarian', 'kids ok', 'square']
+    },
+    {
+        name: 'Grandma',
+        price: 11,
+        category: 'entree',
+        popularity: 9,
+        rating: 4.9,
+        tags: ['vegetarian', 'kids ok', 'square']
+    },
+    {
+        name: 'Buffalo Chicken',
+        price: 7,
+        category: 'dessert',
+        popularity: 6,
+        rating: 4.3,
+        tags: ['non-vegetarian', 'spicy', 'regular']
+    },
+    {
+        name: 'Pepperoni',
+        price: 10,
+        category: 'entree',
+        popularity: 9,
+        rating: 4.7,
+        tags: ['non-vegetarian', 'kids', 'regular']
+    }
+];
 
 
 
@@ -109,8 +158,8 @@
 
 //CODE HERE
 
-// const filteredFood = foodArr.filter(/* CALLBACK HERE */)
-
+const filteredFood = foodArr.filter((vegOption) => vegOption.tags[0] === "vegetarian")
+console.log(filteredFood)
 
 
 //////////////////PROBLEM 5////////////////////
@@ -148,6 +197,9 @@
 */
 
 //CODE HERE
+const filterByProperty = (property, number) => {
+    
+}
 
 
 /*
