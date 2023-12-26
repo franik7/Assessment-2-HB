@@ -214,7 +214,7 @@ const filterByProperty = (property, number) => {
     }
 }
 
-filterByProperty("price", 9, 9)
+filterByProperty("price", 9)
 
 
 
