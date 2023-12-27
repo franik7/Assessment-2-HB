@@ -102,7 +102,6 @@ console.log(category)
 */
 
 //CODE HERE
-//[price, popularity, rating, tags]
 let foodArr = [
     {
         name: 'Sicilian',
@@ -159,7 +158,7 @@ let foodArr = [
 //CODE HERE
 
 const filteredFood = foodArr.filter((vegOption) => vegOption.tags[0] === "vegetarian")
-console.log(filteredFood)
+// console.log(filteredFood)
 
 
 //////////////////PROBLEM 5////////////////////
@@ -196,26 +195,18 @@ console.log(filteredFood)
     Return the filtered array from the entire function
 */
 
-//CODE HERE
-const filterByProperty = (property, number) => {
-    for(let k = 0; k<foodArr.length;k++){
-        
-        // console.log(foodArr[k].property)
-        // console.log(foodArr[k].price)
+//CODE HERE   
+   
+function filterByProperty(property, number){
 
-        propertyPassed = foodArr[k].property  
-        // console.log(property)
-        
-        // console.log(foodArr[k].price)
-
-        if(foodArr[k].price > number){
-        console.log(foodArr[k])
-        }
-    }
-}
-
-filterByProperty("price", 9)
-
+let filteredArray = foodArr.filter((el) => {
+    let passedProperty = el[property]
+    if(passedProperty > number){
+        return true
+    } return false
+}) 
+return filteredArray
+} 
 
 
 /*
@@ -226,3 +217,4 @@ filterByProperty("price", 9)
 */
 
 //CODE HERE
+console.log(filterByProperty("rating", 4.5))
