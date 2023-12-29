@@ -146,6 +146,6 @@ console.log(deals[0]["title"])
     to replace the word March with April.
 */
 
-//CODE HERE
+///CODE HERE
 deals[1]["desc"] = deals[1]["desc"].replace('This deal lasts until the end of March!', 'This deal lasts until the end of April!')
 console.log(deals[1]["desc"])
