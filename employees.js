@@ -8,6 +8,7 @@
 
 //////////////////PROBLEM 1////////////////////
 /*  
+
     Create a new class called `Employee`.
     Make sure to call your constructor, and 
     require these 2 parameters: name (a string), and shifts (a string).
@@ -24,7 +25,7 @@ class Employee {
     constructor(name, shifts) {
         this.name = name;
         this.shifts = shifts;
-    }
+    };
     getSchedule(){
         console.log(`${this.name} works on ${this.shifts}`)
     }
