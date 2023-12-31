@@ -42,7 +42,7 @@ class Employee {
 */
 
 //CODE HERE
-const empOne = new Employee('Jess', 'weekday mornings')
+const empOne = new Employee('Jess', 'weekday mornings');
 
 
 
