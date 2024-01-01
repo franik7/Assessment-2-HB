@@ -99,8 +99,8 @@ calcFinalPrice(summedPrice, 2, 0.04)
     name (string) - I can personalize the checkout message for each client
     phone (string) - capture client's phone
     email (string) - capture client's email
-    address (string) - Client's address
-    what was ordered and how much of each item was ordered (objecy) - what was ordered and number of each items client ordered
+    address (string) - client's address
+    what was ordered and how much of each item was ordered (object) - what was ordered and number of each items client ordered
     discount (number) - number representing customer discount (if any)
     order total (number) - total number for the order
     client already paid (boolean) - client prepaid online? True or False
@@ -124,6 +124,7 @@ let jennysOrder = {
         "Duck Sauce": 2,
     },
     discount: 0.05,
-    orderTotal: 20,
-    paid: true
+    orderTotal: 30,
+    paid: true,
 }
+

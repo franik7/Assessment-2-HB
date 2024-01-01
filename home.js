@@ -27,10 +27,6 @@ greetUser("Andrew");
 
 
 
-
-
-
-
 //////////////////PROBLEM 2////////////////////
 /* 
     Below is an array of zip codes that are in
